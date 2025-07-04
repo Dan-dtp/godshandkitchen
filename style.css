@@ -28,6 +28,10 @@
     padding: 0 15px;
     height: 40px;
   }
+
+  nav::after {
+    display: none;
+  }
 }
 
 /* ===== BASE STYLES ===== */
@@ -679,4 +683,20 @@ footer {
 .brand {
   display: flex;
   align-items: center;
+}
+
+/* Add close button at bottom of sidebar */
+nav::after {
+  content: '✕ Close';
+  display: block;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+nav {
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }

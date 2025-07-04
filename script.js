@@ -243,3 +243,28 @@ backToTopBtn.addEventListener('click', () => {
     behavior: 'smooth'
   });
 });
+
+// Mobile Menu Toggle
+const menuToggle = document.querySelector('.mobile-menu-toggle');
+const nav = document.querySelector('nav');
+const navLinks = document.querySelectorAll('nav a'); // Select all nav links
+
+menuToggle.addEventListener('click', () => {
+  nav.classList.toggle('active');
+  menuToggle.innerHTML = nav.classList.contains('active') ? 
+    '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+});
+
+// Close menu when any link is clicked (including Contact)
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    nav.classList.remove('active');
+    menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+  });
+});
+
+document.addEventListener('click', (e) => {
+  if (!nav.contains(e.target) && !menuToggle.contains(e.target)) {
+    nav.classList.remove('active');
+  }
+});

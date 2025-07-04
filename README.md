@@ -1,11 +1,10 @@
 # God's Hand Kitchen - Restaurant Website
 
-![Website Preview](https://raw.githubusercontent.com/yourusername/gods-hand-kitchen/main/pictures/screenshot.jpg)
 
 A responsive website for **God's Hand Kitchen**, an authentic Nigerian restaurant in Edmonton, featuring menu display, contact information, and mobile-friendly design.
 
 ## 🚀 Live Demo
-[View Live Site](https://godshandkitchen.netlify.app)
+[View Live Site](https://luxury-gnome-c00e86.netlify.app/)
 
 ## ✨ Features
 - **Fully Responsive** - Works on mobile, tablet & desktop
@@ -30,24 +29,11 @@ A responsive website for **God's Hand Kitchen**, an authentic Nigerian restauran
 | JavaScript     |                | Responsive UI  |
 | Font Awesome   |                | Color Gradients|
 
-## 📂 Project Structure
-
-gods-hand-kitchen/
-├── index.html # Homepage
-├── menu.html # Menu page
-├── style.css # Main styles
-├── script.js # Interactive elements
-├── pictures/ # All images
-│ ├── logo.jpg
-│ ├── Display.jpeg
-│ └── menu-items/
-└── README.md
-
 
 ## 🔧 Installation (For Local Development)
 ```bash
-git clone https://github.com/yourusername/gods-hand-kitchen.git
-cd gods-hand-kitchen
+git clone https://github.com/yourusername/godshandkitchen.git
+cd godshandkitchen
 # Open index.html in browser
 
 🌟 Key Learnings
