@@ -60,12 +60,6 @@ const menuItems = [
         image: "pictures/Ayamase.jpeg"
     },
     {
-        name: "Ata Agonyin",
-        price: 199.99,
-        category: "Stews",
-        image: "pictures/Ata_agonyin.jpeg"
-    },
-    {
         name: "Assorted Stew (with 4 proteins)",
         image: "pictures/Assorted_Stew.jpg",
         category: "Stews",
