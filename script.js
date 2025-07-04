@@ -36,10 +36,10 @@ const menuItems = [
         image: "pictures/fried_rice.jpg",
         category: "Rice Dishes",
         sizes: [
-          { label: "Cooler", price: 400 },
-          { label: "Big Foil Tray", price: 180 },
-          { label: "Small Foil Tray", price: 120 },
-          { label: "Plate", price: 25 }
+          { label: "Cooler", price: 450 },
+          { label: "Big Foil Tray", price: 220 },
+          { label: "Small Foil Tray", price: 150 },
+          { label: "Plate", price: 30 }
         ]
     },
     {
