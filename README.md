@@ -25,9 +25,8 @@ A responsive website for **God's Hand Kitchen**, an authentic Nigerian restauran
 | Frontend       | Deployment     | Design         |
 |----------------|----------------|----------------|
 | HTML5          | Netlify        | CSS3           |
-| CSS3           | GitHub Pages   | Flexbox/Grid   |
+| CSS3           |                | Flexbox/Grid   |
 | JavaScript     |                | Responsive UI  |
-| Font Awesome   |                | Color Gradients|
 
 
 ## 🔧 Installation (For Local Development)

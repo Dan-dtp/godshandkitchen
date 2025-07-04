@@ -244,27 +244,39 @@ backToTopBtn.addEventListener('click', () => {
   });
 });
 
-// Mobile Menu Toggle
+// Mobile Menu Toggle - ENHANCED VERSION
 const menuToggle = document.querySelector('.mobile-menu-toggle');
 const nav = document.querySelector('nav');
-const navLinks = document.querySelectorAll('nav a'); // Select all nav links
+const navLinks = document.querySelectorAll('nav a');
 
-menuToggle.addEventListener('click', () => {
-  nav.classList.toggle('active');
-  menuToggle.innerHTML = nav.classList.contains('active') ? 
-    '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
-});
-
-// Close menu when any link is clicked (including Contact)
-navLinks.forEach(link => {
-  link.addEventListener('click', () => {
-    nav.classList.remove('active');
-    menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+if (menuToggle && nav) {
+  // Toggle menu
+  menuToggle.addEventListener('click', (e) => {
+    e.stopPropagation(); // Critical fix
+    nav.classList.toggle('active');
+    updateMenuIcon();
   });
-});
 
-document.addEventListener('click', (e) => {
-  if (!nav.contains(e.target) && !menuToggle.contains(e.target)) {
-    nav.classList.remove('active');
+  // Close when clicking links
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      nav.classList.remove('active');
+      updateMenuIcon();
+    });
+  });
+
+  // Close when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!nav.contains(e.target)) {
+      nav.classList.remove('active');
+      updateMenuIcon();
+    }
+  });
+
+  // Handle icon state
+  function updateMenuIcon() {
+    menuToggle.innerHTML = nav.classList.contains('active') 
+      ? '<i class="fas fa-times"></i>' 
+      : '<i class="fas fa-bars"></i>';
   }
-});
+}
