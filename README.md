@@ -4,7 +4,7 @@
 A responsive website for **God's Hand Kitchen**, an authentic Nigerian restaurant in Edmonton, featuring menu display, contact information, and mobile-friendly design.
 
 ## 🚀 Live Demo
-[View Live Site](https://luxury-gnome-c00e86.netlify.app/)
+[View Live Site](https://godshandkitchen.org)
 
 ## ✨ Features
 - **Fully Responsive** - Works on mobile, tablet & desktop
